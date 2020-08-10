@@ -11,7 +11,7 @@ function DummyPlugin() {
 }
 
 const config = env => ({
-  entry: './src/index.jsx',
+  entry: './src/index.js',
   output: {
     path: path.resolve(__dirname, 'dist'),
     filename: 'bundle.js',
@@ -23,12 +23,12 @@ const config = env => ({
         use: 'babel-loader',
         exclude: /node_modules/,
       },
-      {
-        enforce: 'pre',
-        test: /\.(js|jsx)$/,
-        exclude: /node_modules/,
-        loader: 'eslint-loader',
-      },
+      // {
+      //   enforce: 'pre',
+      //   test: /\.(js|jsx)$/,
+      //   exclude: /node_modules/,
+      //   loader: 'eslint-loader',
+      // },
       {
         test: /\.(png|svg|jpg|gif)$/,
         use: [
