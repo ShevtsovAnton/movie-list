@@ -19,7 +19,7 @@ class App extends React.Component {
   }
 
   toggleActive = () => {
-    this.setState((prevState) => ({ active: !prevState.active }));
+    this.setState(prevState => ({ active: !prevState.active }));
   };
 
   render() {
