@@ -1,16 +1,12 @@
 {
-    "parser": "babel-eslint",
-    "env": {
-      "browser": true
-    },
-    "extends": [
-      "airbnb",
-      "prettier",
-      "prettier/react"
-    ],
-    "plugins": ["import", "jsx-a11y", "react", "react-hooks"],
-    "rules": {
-      "strict": 0,
-      "react/jsx-filename-extension": [1, { "extensions": [".js", ".jsx"] }],
-    }
+  "parser": "babel-eslint",
+  "env": {
+    "browser": true
+  },
+  "extends": ["airbnb", "prettier", "prettier/react"],
+  "plugins": ["import", "jsx-a11y", "react", "react-hooks"],
+  "rules": {
+    "strict": 0,
+    "react/jsx-filename-extension": [1, { "extensions": [".js", ".jsx"] }]
   }
+}
