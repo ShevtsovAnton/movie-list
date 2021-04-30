@@ -1,5 +1,6 @@
 import React, { useState, useEffect } from 'react';
 import profileImage from './assets/images/profile.png';
+import logo from './assets/images/logo.png';
 import './Nav.scss';
 
 function Nav() {
@@ -17,11 +18,7 @@ function Nav() {
   }, []);
   return (
     <div className={`nav ${show && 'nav__black'}`}>
-      <img
-        className="nav__logo"
-        src="https://upload.wikimedia.org/wikipedia/commons/0/0f/Logo_Netflix.png"
-        alt="netflix logo"
-      />
+      <img className="nav__logo" src={logo} alt="netflix logo" />
       <img className="nav__avatar" src={profileImage} alt="netflix logo" />
     </div>
   );
