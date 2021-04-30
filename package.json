@@ -12,7 +12,7 @@
     "format": "prettier --write '**/*.{js,jsx,json}'",
     "start": "webpack-dev-server --open --hot --inline -d",
     "analyze": "webpack -p --env.analyze",
-    "predeploy": "npm run build",
+    "predeploy": "npm run build-prod",
     "deploy": "gh-pages -d build"
   },
   "repository": {
